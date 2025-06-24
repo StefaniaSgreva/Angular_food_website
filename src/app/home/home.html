@@ -1,0 +1,11 @@
+<ul>
+  @for (food of foods; track food) {
+    <li>
+      <a>
+        <img [src]="food" alt="Food image">
+      </a>
+    </li>
+  } @empty {
+    <li>No foods available</li>
+  }
+</ul>

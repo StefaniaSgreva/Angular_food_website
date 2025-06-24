@@ -1,3 +1,6 @@
+/**************************
+  ROOT - GLOBAL STYLES
+**************************/
 :root{
   --bg_color: #151517;
   --txt_primary: #F5F5F5;
@@ -13,7 +16,9 @@
   margin: 0;
   padding: 0;
 }
-
+/**************************
+  GENERAL RULES
+**************************/
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;

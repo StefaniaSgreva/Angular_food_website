@@ -1,5 +1,6 @@
 header{
   background-color: #222327;
+  border-bottom: 1px solid #3bce589f;
   font-size: 18px;
 }
 .container{
@@ -9,6 +10,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo{
+  padding: 0 30px;
+  padding-left: 60px;
 }
 nav{
   position: relative;
