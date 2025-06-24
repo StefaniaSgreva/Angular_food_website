@@ -1,19 +1,26 @@
 <header>
   <div class="container">
-    <a href="#" routerLink="/" class="logo">Logo</a>
+    <a href="#" routerLink="/" class="logo">
+      <!-- Versione semplificata per test -->
+      <img src="img/logo1.svg"
+          alt="Logo Sito"
+          width="40"
+          height="40">
+    </a>
     <nav>
-      <ul>
-        <li>
-          <a href="#" routerLink="/">Home</a>
-        </li>
-        <li>
-          <a href="#" routerLink="/products-page">Products</a>
-        </li>
-        <li>
-          <a href="#" routerLink="/cart-page">Cart</a>
-        </li>
-        <div id="indicator"></div>
-      </ul>
+      <a href="#" routerLink="/"
+         routerLinkActive="active"
+         (click)="handleClick($event)">Home</a>
+
+      <a href="#" routerLink="/food-page"
+         routerLinkActive="active"
+         (click)="handleClick($event)">Food</a>
+
+      <a href="#" routerLink="/cart-page"
+         routerLinkActive="active"
+         (click)="handleClick($event)">Cart</a>
+
+      <div #indicator id="indicator"></div>
     </nav>
   </div>
 </header>

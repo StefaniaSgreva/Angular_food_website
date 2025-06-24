@@ -10,14 +10,16 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-ul{
+nav{
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 30px;
+  background: #222327;
+  padding: 15px 60px;
 }
-a{
+nav a{
   color: #999;
-    position: relative;
+  position: relative;
   z-index: 2;
   height: 75px;
   display: flex;
@@ -26,8 +28,10 @@ a{
   padding: 0 30px;
   transition: 0.5s;
 }
+nav a.active{
+  color: #222327;
+}
 #indicator{
-  right: 0;
   position: absolute;
   height: 75px;
   width: 150px;
@@ -64,4 +68,19 @@ a{
   10px 45px #222327;
   transition: 0.5s;
 }
+#indicator.change::before{
+  left: -10px;
+  box-shadow: -15px 30px #29fc53,
+  -5px 60px #29fc53,
+  -10px 15px #222327,
+  -20px 45px #222327;
+}
+#indicator.change::after{
+  right: -20px;
+  box-shadow: 10px 30px #29fc53,
+  20px 60px #29fc53,
+  15px 15px #222327,
+  25px 45px #222327;
+}
+
 
